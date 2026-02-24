@@ -1,0 +1,37 @@
+# Git configuration — adapt to each machine before symlinking to ~/.gitconfig
+#
+# REQUIRED: Set your name and email.
+# Use a no-reply address if you prefer to keep email private on GitHub:
+#   https://github.com/settings/emails → "Keep my email address private"
+[user]
+	name = Your Name
+	email = you@example.com
+
+# OPTIONAL: Per-directory identity override using includeIf.
+# Useful when you have separate work/personal repos that should use different
+# names or emails. Create a .gitconfig.work file in that directory with its
+# own [user] block, then point to it here.
+#
+# Example:
+#   [includeIf "gitdir:~/work/"]
+#       path = ~/work/.gitconfig.work
+#
+# [includeIf "gitdir:~/github/mscstud/"]
+# 	path = ~/github/mscstud/.gitconfig.mscstud
+
+[core]
+	# Global gitignore — create ~/.gitignore with patterns like .DS_Store, *.swp
+	excludesfile = ~/.gitignore
+
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	logline = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
