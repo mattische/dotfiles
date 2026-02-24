@@ -1,0 +1,13 @@
+# Example: ~/work/.gitconfig.work
+#
+# Overrides [user] for all repos under ~/work/
+# Referenced from ~/.gitconfig via:
+#
+#   [includeIf "gitdir:~/work/"]
+#       path = ~/work/.gitconfig.work
+#
+# Copy this file to ~/work/.gitconfig.work and adapt the values.
+
+[user]
+	name = Your Name
+	email = you@company.com
