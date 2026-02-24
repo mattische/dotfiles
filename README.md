@@ -4,12 +4,13 @@ Config for zsh (oh-my-zsh), ghostty, and git.
 
 ## Install
 
+clone this repo
+
 ```bash
-git clone <repo-url> ~/dotfiles
 bash ~/dotfiles/install.sh
 ```
 
-Then edit `~/.gitconfig` and `~/.zprofile` with machine-specific values (see comments in each file).
+edit `~/.gitconfig` and `~/.zprofile` with machine-specific values (see comments in each file).
 
 ---
 
