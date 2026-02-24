@@ -106,7 +106,18 @@ gsettings set org.gnome.desktop.default-applications.terminal exec-arg ''
 
 ---
 
-## Ghostty theme
+## Ghostty 
+
+### config
+some settings that is useful (in ghostty config)
+
+```bash
+font-size = 17
+cursor-style = block
+copy-on-select = clipboard
+```
+
+### theme
 
 `vesper` — bundled with ghostty. The `cmd+s` leader key is used for all keybindings (splits, tabs, etc).
 On Linux, replace `cmd` with `ctrl` or `super` in `ghostty/config` if preferred.
