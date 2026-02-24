@@ -2,6 +2,7 @@
 #
 # Overrides [user] for all repos under ~/work/
 # Referenced from ~/.gitconfig via:
+# To be clear, the below directive should be put in ~/work/.gitignore.work
 #
 #   [includeIf "gitdir:~/work/"]
 #       path = ~/work/.gitconfig.work
